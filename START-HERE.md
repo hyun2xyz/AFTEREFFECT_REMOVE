@@ -5,10 +5,13 @@
 After Effects(Mocha AE 포함)는 Adobe 라이선스로 별도 준비하며, 앱과 모델은 이 폴더에
 포함하지 않습니다.
 
-## 폴더를 연 뒤 이 문장을 붙여 넣기
+## 포크해서 받기
 
-ZIP을 완전히 풀고 `AGENTS.md`, `scripts`, `docs`, `.agents`가 있는 폴더를 에이전트의
-작업 폴더로 선택합니다. Git이나 전역 스킬 설치는 필요하지 않습니다.
+공통강의의 Git 세팅(Git·GitHub CLI 설치와 `gh` 인증)을 마친 컴퓨터에서 시작합니다.
+[포크로 시작하고 업데이트 받기](docs/fork-and-update.md) 1번의 문장으로 이 저장소를 내 GitHub
+계정에 포크해서 받고, 받은 폴더를 Codex에서 다시 엽니다. 전역 스킬 설치는 필요하지 않습니다.
+
+## 폴더를 연 뒤 이 문장을 붙여 넣기
 
 > 이 폴더의 AGENTS.md와 .agents/skills/aftereffect-remove/SKILL.md를 읽고 시작해 주세요.
 > 실제 OS와 설치된 도구를 확인하고, OS setup 문서의 공식 출처로 빠진 것만 준비해 주세요.
@@ -31,3 +34,6 @@ ZIP을 완전히 풀고 `AGENTS.md`, `scripts`, `docs`, `.agents`가 있는 폴�
 
 아무 영상이나 성공하지 않습니다. 첫 샷은 짧고, 지울 대상이 평평하고 질감 있는
 벽면에 붙어 있고, 사람이 대상을 크게 가리지 않는 영상으로 시작합니다.
+
+수업을 마치면 내 작업을 내 포크에 push하고, 강사가 업데이트를 알리면 upstream에서 pull합니다.
+방법은 [포크로 시작하고 업데이트 받기](docs/fork-and-update.md)의 2·3번에 있습니다.
