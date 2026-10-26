@@ -1,0 +1,4 @@
+interface:
+  display_name: "Aftereffect Remove"
+  short_description: "Mocha 평면 추적과 OpenCV 검수로 벽면 대상을 지우는 수업용 스킬"
+  default_prompt: "Use $aftereffect-remove to check my computer and guide one lesson at a time from my clip to a clean After Effects removal project."
