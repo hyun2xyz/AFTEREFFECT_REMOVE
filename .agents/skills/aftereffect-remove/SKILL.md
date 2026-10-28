@@ -40,8 +40,10 @@ contains `scripts/setup_environment.py`. Rules live in
   SIFT/RANSAC, color-match on unchanged wall and use only the removal region.
 - Pixels outside the patch alpha must equal the source. Do not apply Corner Pin
   again to an already tracked full-canvas RGBA patch.
-- Build the AE project from Python-generated JSX run by the student through
-  File > Scripts > Run Script File. No MCP, persistent bridge, overwrite of open
+- Build the AE project with `scripts/ae_comp.py` ([ae-comp](../../../docs/ae-comp.md)):
+  it writes JSX the student runs in a new, empty project through
+  File > Scripts > Run Script File; then read `build_comp.result.json` with the
+  printed `job_id`. No MCP, persistent bridge, overwrite of open
   projects, automatic save or render.
 - A result that misses the gate is a review render. Do not make a breakdown or
   public video from it.

@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-28",
+  "host": "macOS, After Effects 26.3x87",
+  "media": "synthetic PNG/JPEG sequences generated for the check",
+  "script": "scripts/ae_comp.py + scripts/ae_comp.jsx",
+  "render_check": "CompItem.saveFrameToPng, 8-bit PNG",
+  "project": {
+    "bits_per_channel": 16,
+    "working_space": "Rec.709 Gamma 2.4",
+    "linear_blending": true
+  },
+  "comp": {
+    "width": 640,
+    "height": 360,
+    "pixel_aspect": 1,
+    "frames": 24
+  },
+  "layers": [
+    {
+      "name": "Plate",
+      "enabled": true,
+      "in_frame": 0,
+      "out_frame": 24,
+      "alpha": "ignore",
+      "frames": 24
+    },
+    {
+      "name": "Patch",
+      "enabled": true,
+      "in_frame": 4,
+      "out_frame": 16,
+      "alpha": "straight",
+      "frames": 12
+    }
+  ],
+  "checks": {
+    "outside_patch_alpha_max_diff_vs_patch_off": 1,
+    "frames_3_16_equal_patch_off": true,
+    "opaque_patch_constant_frames_4_15": true,
+    "opaque_patch_changed_vs_patch_off": true,
+    "green_under_alpha0_pixels": 0
+  },
+  "also_checked": {
+    "note": "shared ae_comp.jsx, run with the REMOVE preset",
+    "results": [
+      "non-empty project: stopped, nothing changed",
+      "failure after settings change: items removed, 8 bpc / no working space / linear off restored, no AE dialog"
+    ]
+  },
+  "not_verified": [
+    "Windows After Effects",
+    "real student footage",
+    "AE with script file writing disabled",
+    "OCIO project guard",
+    "AE versions other than 26.3"
+  ]
+}
